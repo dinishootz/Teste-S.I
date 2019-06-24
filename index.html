@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Site</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <section id="home">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="img\1.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="img\2.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="img\3.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+    </section>
+
+    <section id="news" class="news">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni soluta sit magnam, error itaque, porro autem excepturi est natus dolorem laborum. Labore itaque nemo ab quos aperiam ad quae ducimus, harum possimus eveniet optio, impedit sed consequuntur error explicabo sit amet ut quod voluptatum iure? Aperiam unde aspernatur dolorem natus!</p>
+        <p>Iste deleniti tenetur ullam vero, nobis maiores, rem, necessitatibus ex qui facere autem praesentium perferendis commodi optio. Officia dolor laudantium quas voluptatum quos vitae atque quibusdam ipsum. Debitis odit incidunt veritatis. Odio libero voluptas necessitatibus dolores quaerat delectus quia consequuntur facilis, atque magni quis repudiandae explicabo mollitia, dolorem rerum sequi?</p>
+        <p>Vero, provident temporibus aliquid quasi officia voluptates atque quas obcaecati incidunt sequi ut suscipit sit unde? Ipsum quae a ratione sapiente facilis sed hic perferendis, animi magni fugiat quis libero explicabo officia enim modi rem iste, exercitationem ea, beatae necessitatibus. Cupiditate totam sit minus vitae unde asperiores quo deserunt aperiam.</p>
+    </section>
+
+    <section id="about" class="about">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni soluta sit magnam, error itaque, porro autem excepturi est natus dolorem laborum. Labore itaque nemo ab quos aperiam ad quae ducimus, harum possimus eveniet optio, impedit sed consequuntur error explicabo sit amet ut quod voluptatum iure? Aperiam unde aspernatur dolorem natus!</p>
+        <p>Iste deleniti tenetur ullam vero, nobis maiores, rem, necessitatibus ex qui facere autem praesentium perferendis commodi optio. Officia dolor laudantium quas voluptatum quos vitae atque quibusdam ipsum. Debitis odit incidunt veritatis. Odio libero voluptas necessitatibus dolores quaerat delectus quia consequuntur facilis, atque magni quis repudiandae explicabo mollitia, dolorem rerum sequi?</p>
+        <p>Vero, provident temporibus aliquid quasi officia voluptates atque quas obcaecati incidunt sequi ut suscipit sit unde? Ipsum quae a ratione sapiente facilis sed hic perferendis, animi magni fugiat quis libero explicabo officia enim modi rem iste, exercitationem ea, beatae necessitatibus. Cupiditate totam sit minus vitae unde asperiores quo deserunt aperiam.</p>
+    </section>
+    
+    <section id="contact" class="contact">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni soluta sit magnam, error itaque, porro autem excepturi est natus dolorem laborum. Labore itaque nemo ab quos aperiam ad quae ducimus, harum possimus eveniet optio, impedit sed consequuntur error explicabo sit amet ut quod voluptatum iure? Aperiam unde aspernatur dolorem natus!</p>
+        <p>Iste deleniti tenetur ullam vero, nobis maiores, rem, necessitatibus ex qui facere autem praesentium perferendis commodi optio. Officia dolor laudantium quas voluptatum quos vitae atque quibusdam ipsum. Debitis odit incidunt veritatis. Odio libero voluptas necessitatibus dolores quaerat delectus quia consequuntur facilis, atque magni quis repudiandae explicabo mollitia, dolorem rerum sequi?</p>
+        <p>Vero, provident temporibus aliquid quasi officia voluptates atque quas obcaecati incidunt sequi ut suscipit sit unde? Ipsum quae a ratione sapiente facilis sed hic perferendis, animi magni fugiat quis libero explicabo officia enim modi rem iste, exercitationem ea, beatae necessitatibus. Cupiditate totam sit minus vitae unde asperiores quo deserunt aperiam.</p>
+    </section>
+
+    <footer class="footer"> Copyright TIX 2019 </footer>
+
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+</body>
+</html>

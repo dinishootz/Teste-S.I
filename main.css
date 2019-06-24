@@ -1,0 +1,142 @@
+* {
+    margin: 0%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #222;
+  }
+
+section{
+    min-height: 100vh;
+}
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 1vh;
+    block-size: 2cm;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222;
+    z-index: 2;
+  }
+  
+  li {  
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 27px 50px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #000000;
+    transition-duration: 1s;
+  }
+  * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 2000px;
+  position: relative;
+  margin: 0;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* TEXTO */
+
+#news {
+    color: #ffffff;
+    font-size: 20px;
+    padding: 27px 50px;
+}
+
+#about {
+    color: #ffffff;
+    font-size: 20px;
+    padding: 27px 50px;
+}
+
+#contact {
+    color: #ffffff;
+    font-size: 20px;
+    padding: 27px 50px;
+}
+
+/* footer */
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    block-size: 2cm;
+    padding: 27px 50px;
+    background-color: #ffffff;
+    color: #222;
+    text-align: center;
+  }
